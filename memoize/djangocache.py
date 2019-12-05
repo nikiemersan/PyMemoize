@@ -39,5 +39,5 @@ class Cache(object):
             seconds = int(expiry - now)
         return self._cache.set(key, value, seconds)
 
-    def __delitem__(key):
+    def __delitem__(self, key):
         return self.delete(key)
